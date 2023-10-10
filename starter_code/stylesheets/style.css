@@ -12,7 +12,6 @@ footer links grey: #454245
 * {
   margin: 0;
   padding: 0;
-  background-color: #540b51;
   box-sizing: border-box;
   font-family: "Gabarito", sans-serif;
 }
@@ -23,7 +22,7 @@ nav {
   display: flex;
   justify-content: space-between;
   background-color: #540b51;
-  margin: 50px 30px;
+  padding: 50px 30px;
 }
 
 #logo {
@@ -78,6 +77,96 @@ nav {
   border-radius: 4px;
 }
 
+/* Header */
+
+header {
+  background-color: #540b51;
+}
+
+header h1 {
+  color: #fff;
+  text-align: center;
+  font-weight: 600;
+  font-size: 5em;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+header p {
+  color: #fff;
+  font-size: 2em;
+  text-align: center;
+  margin-top: 24px;
+  width: 80%;
+  margin: 0 auto;
+}
+
+header strong {
+  color: #ecb12f;
+}
+
+#sign-up {
+  max-width: 700px;
+  margin: 24px auto 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 160px;
+}
+
+#sign-up button {
+  border-style: none;
+  margin: 0 auto;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 1em;
+  border-radius: 4px;
+  max-width: 500px;
+  width: 100%;
+}
+
+#sign-up button:nth-child(1) {
+  padding: 24px 100px;
+  border-style: none;
+  color: #540b51;
+  background-color: #fff;
+}
+
+#sign-up button:nth-child(2) {
+  padding: 12px 12px;
+  display: flex;
+  align-items: center;
+  border-style: none;
+  color: #fff;
+  background-color: #4285f4;
+}
+
+#sign-up button > span {
+  text-align: center;
+  background-color: #4285f4;
+  width: 80%;
+}
+
+#sign-up button img {
+  background-color: #fff;
+  border-radius: 4px;
+  width: 48px;
+  height: 48px;
+}
+
+#hero-img {
+  margin-top: 48px;
+  overflow: hidden;
+  height: 550px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+#hero-img img {
+  margin: 32px 0 auto;
+  width: 150%;
+}
+
 @media (max-width: 768px) {
   /* Nav */
 
@@ -86,11 +175,50 @@ nav {
   }
 }
 
-@media (min-width: 768px) and (max-width: 1024px) {
+@media (min-width: 769px) and (max-width: 1024px) {
   /* Nav */
 
   .menu-item {
     display: none;
+  }
+
+  /* Header */
+
+  header {
+    background-image: url("../images/background-singup.png");
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: cover;
+    display: flex;
+    justify-content: space-evenly;
+    height: 100vh;
+  }
+
+  header h1 {
+    text-align: left;
+    margin-left: 30px;
+    font-size: 5.5em;
+  }
+
+  header p {
+    text-align: left;
+    width: 100%;
+    margin-top: 24px;
+    margin-left: 30px;
+  }
+
+  #sign-up {
+    margin-left: 30px;
+  }
+
+  #hero-img {
+    overflow: hidden;
+    height: fit-content;
+    width: 80%;
+  }
+
+  #hero-img img {
+    margin: 150px 0 0 150px;
   }
 }
 
@@ -100,6 +228,47 @@ nav {
   #icon-menu {
     display: none;
   }
+
+  /* Header */
+
+  header {
+    background-image: url("../images/background-singup.png");
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: cover;
+    display: flex;
+    justify-content: space-evenly;
+    height: 100vh;
+  }
+
+  header h1 {
+    text-align: left;
+    margin-left: 30px;
+    font-size: 5.5em;
+  }
+
+  header p {
+    text-align: left;
+    width: 80%;
+    margin-top: 24px;
+    margin-left: 30px;
+  }
+
+  #sign-up {
+    margin-left: 30px;
+  }
+
+  #hero-img {
+    overflow: hidden;
+    height: 100vh;
+    width: 80%;
+  }
+
+  #hero-img img {
+    margin: 150px 0 0 150px;
+    width: 600px;
+    height: 400px;
+  }
 }
 
 @media (min-width: 1440px) {
@@ -107,5 +276,74 @@ nav {
 
   #icon-menu {
     display: none;
+  }
+
+  /* Header */
+
+  header {
+    background-color: #540b51;
+    display: flex;
+    justify-content: space-evenly;
+    height: 100vh;
+  }
+
+  header h1 {
+    text-align: left;
+    margin-left: 30px;
+    font-size: 5.5em;
+    width: 500px;
+  }
+
+  header p {
+    text-align: left;
+    width: 60%;
+    margin-top: 24px;
+    margin-left: 30px;
+  }
+
+  #sign-up {
+    margin-left: 30px;
+  }
+
+  #hero-img {
+    width: 40%;
+    height: fit-content;
+  }
+
+  #hero-img img {
+    padding-top: 70px;
+    width: 700px;
+    height: 500px;
+    position: fixed;
+    right: 50px;
+  }
+
+  #sign-up {
+    margin: 24px 0 0 30px;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-around;
+    height: 160px;
+  }
+
+  #sign-up button {
+    border-style: none;
+    margin: 0 auto;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 1em;
+    border-radius: 4px;
+    max-width: 400px;
+    width: 500px;
+    height: 64px;
+  }
+
+  #sign-up button:nth-child(1) {
+    padding: 24px 0px;
+    border-style: none;
+    color: #540b51;
+    background-color: #fff;
+    margin-right: 30px;
   }
 }
