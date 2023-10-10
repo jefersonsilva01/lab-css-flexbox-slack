@@ -314,8 +314,8 @@ header strong {
     padding-top: 70px;
     width: 700px;
     height: 500px;
-    position: fixed;
-    right: 50px;
+    position: absolute;
+    right: 150px;
   }
 
   #sign-up {
