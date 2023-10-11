@@ -87,7 +87,7 @@ header h1 {
   color: #fff;
   text-align: center;
   font-weight: 600;
-  font-size: 5em;
+  font-size: 4.5em;
   max-width: 700px;
   margin: 0 auto;
 }
@@ -96,7 +96,7 @@ header p {
   color: #fff;
   font-size: 2em;
   text-align: center;
-  margin-top: 24px;
+  padding: 24px 0;
   width: 80%;
   margin: 0 auto;
 }
@@ -167,6 +167,103 @@ header strong {
   width: 150%;
 }
 
+/* Main */
+
+#companies {
+  padding-top: 64px;
+  background-color: #f3eae2;
+  height: 50vh;
+}
+
+#companies p {
+  font-size: 1.5em;
+  text-transform: uppercase;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+#companies-logo {
+  display: flex;
+  justify-content: space-between;
+  max-width: 80vw;
+  margin: 32px auto 0;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+#companies-logo img:nth-child(1) {
+  width: 30%;
+}
+
+#companies-logo img:nth-child(2) {
+  width: 20%;
+}
+
+#companies-logo img:nth-child(3) {
+  width: 20%;
+}
+
+#companies-logo img:nth-child(4) {
+  width: 15%;
+}
+
+#companies-logo img:nth-child(5) {
+  width: 55%;
+}
+
+#companies-logo img:nth-child(6) {
+  width: 35%;
+}
+
+.screens {
+  background-color: #f3eae2;
+}
+
+.screens img {
+  width: 90vw;
+}
+
+.screens h2 {
+  max-width: 80vw;
+  font-weight: 600;
+  margin: 0 auto;
+  text-align: left;
+  font-size: 3em;
+  padding: 16px 0;
+  color: #191817;
+}
+
+.screens p {
+  text-align: left;
+  font-weight: 200;
+  font-size: 2em;
+  max-width: 80vw;
+  margin: 0 auto;
+  color: #000000;
+}
+
+.screens a {
+  padding: 32px 0 48px;
+  text-align: left;
+  font-weight: 200;
+  font-size: 2em;
+  max-width: 80vw;
+  margin: 0 auto;
+  display: block;
+  color: #2e71a6;
+  text-decoration: none;
+}
+
+#screens-2 {
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+#screens-2 img {
+  float: right;
+}
+
 @media (max-width: 768px) {
   /* Nav */
 
@@ -197,10 +294,11 @@ header strong {
   header h1 {
     text-align: left;
     margin-left: 30px;
-    font-size: 5.5em;
+    font-size: 5em;
   }
 
   header p {
+    font-size: 1.8em;
     text-align: left;
     width: 100%;
     margin-top: 24px;
@@ -218,11 +316,114 @@ header strong {
   }
 
   #hero-img img {
-    margin: 150px 0 0 150px;
+    margin: 150px 0 0 100px;
+  }
+
+  /* Main */
+
+  #companies {
+    padding-top: 64px;
+    background-color: #f3eae2;
+    height: 25vh;
+  }
+
+  #companies-logo {
+    display: flex;
+    justify-content: space-between;
+    max-width: 80vw;
+    margin: 32px auto 0;
+    align-items: center;
+    flex-wrap: nowrap;
+  }
+
+  #companies-logo img:nth-child(1) {
+    width: 20%;
+    padding: 0 8px;
+  }
+
+  #companies-logo img:nth-child(2) {
+    width: 10%;
+    padding: 0 8px;
+  }
+
+  #companies-logo img:nth-child(3) {
+    width: 10%;
+    padding: 0 8px;
+  }
+
+  #companies-logo img:nth-child(4) {
+    width: 8%;
+    padding: 0 8px;
+  }
+
+  #companies-logo img:nth-child(5) {
+    width: 30%;
+    padding: 0 8px;
+  }
+
+  #companies-logo img:nth-child(6) {
+    width: 20%;
+    padding: 0 8px;
+  }
+
+  .screens img {
+    width: 90vw;
+  }
+
+  #screens-1 > div > img {
+    content: url("../images/connectedness.png");
+  }
+
+  #screens-2 > div > img {
+    content: url("../images/flexibility.png");
+  }
+
+  #screens-3 > div > img {
+    content: url("../images/speed.png");
+  }
+
+  .screens h2 {
+    max-width: 80vw;
+    font-weight: 600;
+    margin: 0 auto;
+    text-align: left;
+    font-size: 3em;
+    padding: 32px 0;
+    color: #191817;
+  }
+
+  .screens p {
+    text-align: left;
+    font-weight: 200;
+    font-size: 2em;
+    max-width: 80vw;
+    margin: 0 auto;
+    color: #000000;
+  }
+
+  .screens a {
+    padding: 32px 0 48px;
+    text-align: left;
+    font-weight: 200;
+    font-size: 2em;
+    max-width: 80vw;
+    margin: 0 auto;
+    display: block;
+    color: #2e71a6;
+    text-decoration: none;
+  }
+
+  #screens-2 {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  #screens-2 img {
+    float: right;
   }
 }
 
-@media (min-width: 1024px) and (max-width: 1440px) {
+@media (min-width: 1025px) and (max-width: 1440px) {
   /* Nav */
 
   #icon-menu {
@@ -238,12 +439,12 @@ header strong {
     background-size: cover;
     display: flex;
     justify-content: space-evenly;
-    height: 100vh;
+    height: 105vh;
   }
 
   header h1 {
     text-align: left;
-    margin-left: 30px;
+    margin-left: 100px;
     font-size: 5.5em;
   }
 
@@ -251,11 +452,11 @@ header strong {
     text-align: left;
     width: 80%;
     margin-top: 24px;
-    margin-left: 30px;
+    margin-left: 100px;
   }
 
   #sign-up {
-    margin-left: 30px;
+    margin-left: 100px;
   }
 
   #hero-img {
@@ -269,9 +470,119 @@ header strong {
     width: 600px;
     height: 400px;
   }
+
+  /* Main */
+
+  #companies {
+    padding-top: 64px;
+    background-color: #f3eae2;
+    height: 25vh;
+  }
+
+  #companies-logo {
+    display: flex;
+    justify-content: space-between;
+    max-width: 80vw;
+    margin: 32px auto 0;
+    align-items: center;
+    flex-wrap: nowrap;
+  }
+
+  #companies-logo img:nth-child(1) {
+    width: 20%;
+    padding: 0 8px;
+  }
+
+  #companies-logo img:nth-child(2) {
+    width: 10%;
+    padding: 0 8px;
+  }
+
+  #companies-logo img:nth-child(3) {
+    width: 10%;
+    padding: 0 8px;
+  }
+
+  #companies-logo img:nth-child(4) {
+    width: 8%;
+    padding: 0 8px;
+  }
+
+  #companies-logo img:nth-child(5) {
+    width: 30%;
+    padding: 0 8px;
+  }
+
+  #companies-logo img:nth-child(6) {
+    width: 20%;
+    padding: 0 8px;
+  }
+
+  .screens {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .screens img {
+    width: 40vw;
+  }
+
+  #screens-1 > div > img {
+    content: url("../images/connectedness.png");
+  }
+
+  #screens-2 > div > img {
+    content: url("../images/flexibility.png");
+  }
+
+  #screens-3 > div > img {
+    content: url("../images/speed.png");
+  }
+
+  .screens h2 {
+    max-width: 50vw;
+    font-weight: 600;
+    margin: 0 auto;
+    text-align: left;
+    font-size: 3.8em;
+    padding: 32px 0;
+    color: #191817;
+  }
+
+  .screens p {
+    text-align: left;
+    font-weight: 200;
+    font-size: 2em;
+    max-width: 50vw;
+    margin: 0 auto;
+    color: #000000;
+  }
+
+  .screens a {
+    padding: 32px 0 48px;
+    text-align: left;
+    font-weight: 200;
+    font-size: 2em;
+    max-width: 80vw;
+    margin: 0 auto;
+    display: block;
+    color: #2e71a6;
+    text-decoration: none;
+  }
+
+  #screens-2 {
+    display: flex;
+    flex-direction: row;
+    padding: 0 0 0 30px;
+  }
+
+  #screens-2 img {
+    float: right;
+  }
 }
 
-@media (min-width: 1440px) {
+@media (min-width: 1441px) {
   /* Nav */
 
   #icon-menu {
@@ -284,12 +595,16 @@ header strong {
     background-color: #540b51;
     display: flex;
     justify-content: space-evenly;
-    height: 100vh;
+    height: 105vh;
+  }
+
+  header > div {
+    width: 800px;
   }
 
   header h1 {
     text-align: left;
-    margin-left: 30px;
+    margin-left: 100px;
     font-size: 5.5em;
     width: 500px;
   }
@@ -298,28 +613,14 @@ header strong {
     text-align: left;
     width: 60%;
     margin-top: 24px;
-    margin-left: 30px;
+    margin-left: 100px;
   }
 
   #sign-up {
-    margin-left: 30px;
-  }
-
-  #hero-img {
-    width: 40%;
-    height: fit-content;
-  }
-
-  #hero-img img {
-    padding-top: 70px;
-    width: 700px;
-    height: 500px;
-    position: absolute;
-    right: 150px;
+    margin-left: 99px;
   }
 
   #sign-up {
-    margin: 24px 0 0 30px;
     display: flex;
     align-items: center;
     flex-direction: row;
@@ -335,7 +636,7 @@ header strong {
     font-size: 1em;
     border-radius: 4px;
     max-width: 400px;
-    width: 500px;
+    width: 400px;
     height: 64px;
   }
 
@@ -345,5 +646,136 @@ header strong {
     color: #540b51;
     background-color: #fff;
     margin-right: 30px;
+  }
+
+  #hero-img {
+    width: 200px;
+    height: fit-content;
+  }
+
+  #hero-img img {
+    padding-top: 70px;
+    width: 700px;
+    height: 500px;
+    position: absolute;
+    right: 50px;
+  }
+
+  /* Main */
+
+  #companies {
+    padding-top: 64px;
+    background-color: #f3eae2;
+    height: 40vh;
+  }
+
+  #companies-logo {
+    display: flex;
+    justify-content: space-between;
+    max-width: 80vw;
+    margin: 32px auto 0;
+    align-items: center;
+    flex-wrap: nowrap;
+  }
+
+  #companies-logo img:nth-child(1) {
+    width: 250px;
+    padding: 0 8px;
+  }
+
+  #companies-logo img:nth-child(2) {
+    width: 150px;
+    padding: 0 8px;
+  }
+
+  #companies-logo img:nth-child(3) {
+    width: 150px;
+    padding: 0 8px;
+  }
+
+  #companies-logo img:nth-child(4) {
+    width: 120px;
+    padding: 0 8px;
+  }
+
+  #companies-logo img:nth-child(5) {
+    width: 350px;
+    padding: 0 8px;
+  }
+
+  #companies-logo img:nth-child(6) {
+    width: 250px;
+    padding: 0 8px;
+  }
+
+  .screens {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  #screens-1,
+  #screens-3 {
+    padding-right: 40px;
+  }
+
+  .screens img {
+    width: 40vw;
+    max-width: 900px;
+  }
+
+  #screens-1 > div > img {
+    content: url("../images/connectedness.png");
+  }
+
+  #screens-2 > div > img {
+    content: url("../images/flexibility.png");
+  }
+
+  #screens-3 > div > img {
+    content: url("../images/speed.png");
+  }
+
+  .screens h2 {
+    width: 40vw;
+    max-width: 800px;
+    font-weight: 600;
+    margin: 0 auto;
+    text-align: left;
+    font-size: 3.8em;
+    padding: 32px 0;
+    color: #191817;
+  }
+
+  .screens p {
+    text-align: left;
+    font-weight: 200;
+    font-size: 2em;
+    width: 40vw;
+    max-width: 800px;
+    margin: 0 0;
+    color: #000000;
+  }
+
+  .screens a {
+    padding: 32px 0 48px;
+    text-align: left;
+    font-weight: 200;
+    font-size: 2em;
+    max-width: 80vw;
+    margin: 0 auto;
+    display: block;
+    color: #2e71a6;
+    text-decoration: none;
+  }
+
+  #screens-2 {
+    display: flex;
+    flex-direction: row;
+    padding: 0 0 0 50px;
+  }
+
+  #screens-2 img {
+    float: right;
   }
 }
