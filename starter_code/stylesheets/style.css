@@ -264,6 +264,114 @@ header strong {
   float: right;
 }
 
+#numbers h3 {
+  font-size: 3em;
+  max-width: 530px;
+  text-align: center;
+  margin: 150px auto 0;
+}
+
+#numbers > p {
+  text-align: center;
+  margin: 24px auto 24px;
+  max-width: 500px;
+  font-size: 1.5em;
+  font-weight: normal;
+}
+
+#numbers div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 150px;
+}
+
+#numbers button {
+  max-width: 500px;
+  width: 70%;
+  padding: 16px;
+  font-size: 1.2em;
+  text-transform: uppercase;
+  font-weight: 600;
+  border: 2px solid #540b51;
+  border-radius: 4px;
+}
+
+#numbers button:nth-child(1) {
+  background-color: #540b51;
+  color: #fff;
+}
+
+#numbers button:nth-child(2) {
+  background-color: #fff;
+  color: #540b51;
+}
+
+#numbers ul {
+  margin: 54px auto;
+  max-width: 500px;
+  list-style: none;
+  text-align: center;
+}
+
+#numbers li {
+  margin: 32px;
+}
+
+#numbers li p:nth-child(2) {
+  font-size: 1.3em;
+  font-weight: 600;
+  padding: 8px 86px 0;
+}
+
+#numbers span {
+  font-size: 5em;
+  font-weight: 600;
+  text-align: center;
+  margin: 0 auto;
+  color: #540b51;
+}
+
+#welcome {
+  background-color: #540b51;
+  padding: 32px 0;
+  display: flex;
+  flex-direction: column;
+}
+
+#welcome h3 {
+  color: #fff;
+  font-size: 2.5rem;
+  max-width: 80vw;
+  margin: 0 auto 24px;
+  width: 60vw;
+  text-align: center;
+}
+
+#welcome button {
+  max-width: 80vw;
+  width: 60vw;
+  margin: 0 auto;
+  padding: 16px 0;
+  font-size: 1.5em;
+  font-weight: 600;
+  text-transform: uppercase;
+  border: 2px solid #fff;
+  border-radius: 4px;
+}
+
+#welcome button:nth-child(2) {
+  color: #540b51;
+  background-color: #fff;
+}
+
+#welcome button:nth-child(3) {
+  margin-top: 16px;
+  color: #fff;
+  background-color: #540b51;
+}
+
 @media (max-width: 768px) {
   /* Nav */
 
@@ -420,6 +528,94 @@ header strong {
 
   #screens-2 img {
     float: right;
+  }
+
+  #numbers h3 {
+    font-size: 2.5em;
+    max-width: 700px;
+    text-align: center;
+    margin: 150px auto 0;
+  }
+
+  #numbers > p {
+    text-align: center;
+    margin: 24px auto 8px;
+    max-width: 700px;
+    font-size: 1.2em;
+    font-weight: normal;
+  }
+
+  #numbers div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    height: 150px;
+    width: 600px;
+    margin: 0 auto;
+  }
+
+  #numbers button {
+    max-width: 500px;
+    width: 70%;
+    padding: 16px;
+    font-size: 1.2em;
+    text-transform: uppercase;
+    font-weight: 600;
+    border: 2px solid #540b51;
+    border-radius: 4px;
+  }
+
+  #numbers button:nth-child(1) {
+    background-color: #540b51;
+    color: #fff;
+    width: 60%;
+  }
+
+  #numbers button:nth-child(2) {
+    background-color: #fff;
+    color: #540b51;
+    width: 35%;
+  }
+
+  #numbers ul {
+    display: flex;
+    justify-content: space-around;
+    margin: 0 auto 100px;
+    list-style: none;
+    text-align: left;
+    width: 90%;
+    max-width: 80vw;
+  }
+
+  #numbers li {
+    margin: 8px;
+  }
+
+  #numbers li p:nth-child(2) {
+    font-size: 1.2em;
+    font-weight: 600;
+    padding: 8px 0px 0;
+    text-align: left;
+    width: 200px;
+  }
+
+  #numbers span {
+    font-size: 4em;
+    font-weight: 600;
+    text-align: left;
+    margin: 0 auto;
+    color: #540b51;
+  }
+
+  #welcome h3 {
+    max-width: 80vw;
+    width: 80vw;
+  }
+
+  #welcome button {
+    max-width: 80vw;
+    width: 60vw;
   }
 }
 
@@ -579,6 +775,97 @@ header strong {
 
   #screens-2 img {
     float: right;
+  }
+
+  #numbers h3 {
+    font-size: 3.5em;
+    max-width: 80vw;
+    text-align: center;
+    margin: 100px auto 0;
+  }
+
+  #numbers > p {
+    text-align: center;
+    margin: 24px auto 8px;
+    max-width: 80vw;
+    font-size: 1.5em;
+    font-weight: normal;
+  }
+
+  #numbers div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    height: 150px;
+    width: 600px;
+    margin: 0 auto;
+  }
+
+  #numbers button {
+    max-width: 500px;
+    width: 70%;
+    padding: 16px;
+    font-size: 1.2em;
+    text-transform: uppercase;
+    font-weight: 600;
+    border: 2px solid #540b51;
+    border-radius: 4px;
+  }
+
+  #numbers button:nth-child(1) {
+    background-color: #540b51;
+    color: #fff;
+    width: 60%;
+  }
+
+  #numbers button:nth-child(2) {
+    background-color: #fff;
+    color: #540b51;
+    width: 35%;
+  }
+
+  #numbers ul {
+    display: flex;
+    justify-content: space-around;
+    margin: 0 auto 100px;
+    list-style: none;
+    text-align: left;
+    width: 90%;
+    max-width: 80vw;
+  }
+
+  #numbers li {
+    margin: 8px;
+  }
+
+  #numbers li p:nth-child(2) {
+    font-size: 1.2em;
+    font-weight: 600;
+    padding: 8px 0px 0;
+    text-align: left;
+    width: 200px;
+  }
+
+  #numbers span {
+    font-size: 4em;
+    font-weight: 600;
+    text-align: left;
+    margin: 0 auto;
+    color: #540b51;
+  }
+
+  #welcome {
+    background-color: #540b51;
+    padding: 32px 0;
+    display: block;
+    text-align: center;
+  }
+
+  #welcome button {
+    width: 300px;
+    display: inline-block;
+    margin: 0 10px;
   }
 }
 
@@ -777,5 +1064,96 @@ header strong {
 
   #screens-2 img {
     float: right;
+  }
+
+  #numbers h3 {
+    font-size: 3.5em;
+    max-width: 80vw;
+    text-align: center;
+    margin: 100px auto 0;
+  }
+
+  #numbers > p {
+    text-align: center;
+    margin: 24px auto 8px;
+    max-width: 80vw;
+    font-size: 1.5em;
+    font-weight: normal;
+  }
+
+  #numbers div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    height: 150px;
+    width: 600px;
+    margin: 0 auto;
+  }
+
+  #numbers button {
+    max-width: 500px;
+    width: 70%;
+    padding: 16px;
+    font-size: 1.2em;
+    text-transform: uppercase;
+    font-weight: 600;
+    border: 2px solid #540b51;
+    border-radius: 4px;
+  }
+
+  #numbers button:nth-child(1) {
+    background-color: #540b51;
+    color: #fff;
+    width: 60%;
+  }
+
+  #numbers button:nth-child(2) {
+    background-color: #fff;
+    color: #540b51;
+    width: 35%;
+  }
+
+  #numbers ul {
+    display: flex;
+    justify-content: space-around;
+    margin: 0 auto 100px;
+    list-style: none;
+    text-align: left;
+    width: 90%;
+    max-width: 80vw;
+  }
+
+  #numbers li {
+    margin: 8px;
+  }
+
+  #numbers li p:nth-child(2) {
+    font-size: 1.5em;
+    font-weight: 600;
+    padding: 8px 0px 0;
+    text-align: left;
+    max-width: 15vw;
+  }
+
+  #numbers span {
+    font-size: 5.5em;
+    font-weight: 600;
+    text-align: left;
+    margin: 0 auto;
+    color: #540b51;
+  }
+
+  #welcome {
+    background-color: #540b51;
+    padding: 32px 0;
+    display: block;
+    text-align: center;
+  }
+
+  #welcome button {
+    width: 300px;
+    display: inline-block;
+    margin: 0 10px;
   }
 }
