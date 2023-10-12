@@ -372,6 +372,82 @@ header strong {
   background-color: #540b51;
 }
 
+footer img {
+  width: 80px;
+  height: 80px;
+  margin: 32px 0 32px 32px;
+}
+
+#site-map {
+  display: flex;
+  justify-content: space-between;
+  width: 95vw;
+  margin: 0 auto;
+}
+
+#site-map ul li:first-child {
+  font-weight: bold;
+  color: #000000;
+}
+
+#site-map li {
+  margin: 16px 0;
+  color: #454245;
+}
+
+ul {
+  list-style: none;
+}
+
+hr {
+  max-width: 95vw;
+  margin: 64px auto;
+  background-color: #ebe6eb;
+  height: 3px;
+  border: none;
+  border-radius: 4px;
+}
+
+#footer-links {
+  font-size: 1.2em;
+  font-weight: 600;
+  margin-left: 32px;
+}
+
+#footer-links li {
+  margin: 32px 0;
+}
+
+#footer-links li:nth-child(6)::before {
+  content: url("../images/icon-region.png");
+  margin-right: 8px;
+  width: 16px;
+}
+
+#footer-links li:nth-child(7)::before {
+  content: url("../images/icon-download.png");
+  margin-right: 8px;
+}
+
+#footer-links li:nth-child(7) {
+  color: #2e71a6;
+}
+
+#social-media {
+  display: flex;
+  justify-content: space-between;
+  margin: 64px;
+}
+
+small {
+  color: #837b83;
+  font-size: 1.1em;
+  width: 80vw;
+  margin: 32px 0 32px 32px;
+  text-align: left;
+  display: block;
+}
+
 @media (max-width: 768px) {
   /* Nav */
 
@@ -616,6 +692,28 @@ header strong {
   #welcome button {
     max-width: 80vw;
     width: 60vw;
+  }
+
+  #footer-links {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1em;
+    font-weight: 600;
+    margin: 0 32px;
+  }
+
+  #footer-links li {
+    margin: 32px 0;
+  }
+
+  #social-media {
+    display: flex;
+    justify-content: flex-start;
+    margin: 32px 32px;
+  }
+
+  #social-media li {
+    margin-right: 120px;
   }
 }
 
@@ -866,6 +964,28 @@ header strong {
     width: 300px;
     display: inline-block;
     margin: 0 10px;
+  }
+
+  #footer-links {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.3em;
+    font-weight: 600;
+    margin: 0 32px;
+  }
+
+  #footer-links li {
+    margin: 32px 0;
+  }
+
+  #social-media {
+    display: flex;
+    justify-content: flex-start;
+    margin: 32px 32px;
+  }
+
+  #social-media li {
+    margin-right: 120px;
   }
 }
 
@@ -1155,5 +1275,33 @@ header strong {
     width: 300px;
     display: inline-block;
     margin: 0 10px;
+  }
+
+  footer img {
+    width: 80px;
+    height: 80px;
+    margin: 32px 0 32px 64px;
+  }
+
+  #footer-links {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.3em;
+    font-weight: 600;
+    margin: 0 32px;
+  }
+
+  #footer-links li {
+    margin: 32px 0;
+  }
+
+  #social-media {
+    display: flex;
+    justify-content: flex-start;
+    margin: 32px 32px;
+  }
+
+  #social-media li {
+    margin-right: 120px;
   }
 }
